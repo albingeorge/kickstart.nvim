@@ -698,6 +698,20 @@ require('lazy').setup({
             },
           },
         },
+
+        gopls = {
+          settings = {
+            gopls = {
+              analyses = {
+                unusedparams = true,
+              },
+              staticcheck = true,
+              gofumpt = true,
+              completeUnimported = true,
+              usePlaceholders = true,
+            },
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed
